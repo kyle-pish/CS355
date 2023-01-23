@@ -1,0 +1,12 @@
+(run
+  (let x 5)
+  (let y 3.14)
+  (let func (lambda
+    (if (> x y) (let z "Hello there") (print "Else"))
+  ))
+  (print z)
+  (call func)
+  (let y 13.14)
+  (call func)
+  (print z)
+)
